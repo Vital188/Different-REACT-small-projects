@@ -1,4 +1,4 @@
-
+@import "~bootstrap/scss/bootstrap";
 
 .App {
   text-align: center;
@@ -317,7 +317,7 @@ input {
   width: 100px;
   height: 100px;
   color: black;
-  font-size: 8px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,4 +348,13 @@ input {
   display: grid;
   justify-content: space-around;
 
+}
+
+.kvadratas {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
