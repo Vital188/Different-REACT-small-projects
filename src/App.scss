@@ -358,3 +358,23 @@ input {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.middle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid orange;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small {
+  width: 150px;
+  height: 150px;
+  border: 2px solid orange;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
