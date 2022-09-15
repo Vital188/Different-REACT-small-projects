@@ -1,49 +1,30 @@
-import Kvadratas from './010/components/Userefer/Kvadratas';
-import Rutuliai from './010/components/Userefer/DifColor';
-import Rutulis from './010/components/Userefer/Rutulis';
+
 import './App.scss';
-import Inputas from './010/components/Userefer/Inputas';
-import Kvadraciukas from './010/components/Formos2/Kvadraciukas';
-import Pokytis from './010/components/Userefer/Pokytis';
-import Otec from './010/components/Userefer/Otec';
-import { useState } from 'react';
-import BallContext from './010/components/Userefer/ballContext';
+import Buttons from './010/components/Training/Buttons';
+import { useEffect, useState } from 'react';
+import randColor from '../../home-work/src/010/function/randColor';
 
 function App() {
 
-   const [start, setStart] = useState('')
-   const [ball, setBall] = useState('')
+    const [number, setNumber] = useState(0);
+    const [color, setColor] = useState(null);
 
-   const Add = () => {
-    setStart(s => s+ '*')
-   }
-
-   const doIt = () => {
-    setBall(s => s + '$')
-   }
+    useEffect(() => {
+        setColor(randColor());
+    }, [number]);
 
 
-  return (
-    <div className="App">
-      <header className="App-header">
-      {/* <Kvadratas /> */}
-      {/* <Rutulis/> */}
-        {/* <Rutuliai />  */}
-       {/* <Inputas />   */}
-      {/* <Kvadraciukas /> */}
-      {/* <Pokytis /> */}
-      <BallContext.Provider value={{
-         ball
-      }}>
-      <div className='miskas'>
-      <Otec start={start}/>
-      </div>
-      <button onClick={Add}>Prideti</button>
-      <button onClick={doIt}>Prideti</button>
-      </BallContext.Provider>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+            <h2 style={{color}}>{number}</h2>
+            <h1>Total Recall 2</h1>
+            <Buttons t={1} setNumber={setNumber} />
+            <Buttons  t={50} setNumber={setNumber} color={'crimson'}/>
+            <Buttons  t={100} setNumber={setNumber} color={'green'}/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
