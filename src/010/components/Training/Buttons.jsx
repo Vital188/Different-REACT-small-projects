@@ -1,9 +1,9 @@
 function Buttons({setNumber, color, t}) {
 
 
-    const doNumber = what => {
-        setNumber(n => n + what);
-    }
+// const doNumber = what => {
+//     setNumber(n => n + what);
+// }
 
 
     return (
@@ -13,7 +13,7 @@ function Buttons({setNumber, color, t}) {
             {
                 [...Array(50)].map((_, i) => <button key={i} style={{
                     backgroundColor: color
-                }} onClick={() => doNumber(t +i + 1)}>{i + 1 + t}</button>)
+                }} onClick={() => setNumber(s => s + 1 + i)}>{i + 1}</button>)
             }
         </div>
         </>
