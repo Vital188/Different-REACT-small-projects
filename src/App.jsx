@@ -1,56 +1,93 @@
-// Atvaizduoti masyvą dogs. Kiekvienas šuo atskirame kvadrate.
+// Sukurti Komponentą Bala ir jame atvaizduoti masyvą seaPlaners.
 
-// Atvaizduoti masyvą dogs. Kiekvienas šuo atskirame apskritime.
-//  Šunys turi būti išrūšiuoti nuo ilgiausio žodžio iki trumpiausio
-//  , o apskritimai sunumeruoti nuo 1 iki galo.
+// Sukurti du komponentus Tvenkinys, Daiktas -  tėvinį ir vaikinį atitinkamai.
+//  Tvenkinys komponente du kartus panaudokite komponentą Daiktas atvaizduoti 
+//  masyvą seaPlaners - vieną kartą poriniams kitą kartą neporiniams įrašams 
+//  (pagal id, ne masyvo indeksą).
 
-// Atvaizduoti masyvą dogs. Poriniuose indeksuose esančius šunis
-// atvaizduoti kvadratuose, neporinius apskritime.
+// Sukurti keturis komponentus. Jura, Valtis, Laivas, Sala. Jura tėvinis komponentas,
+//  kiti trys vaikiniai. Atvaizduoti masyvą seaPlaners pagal taisyklę: “man” - Valtis,
+//   “car” - Laivas, “animal” - Sala, “fish” - tiesiai Jura komponente (be jokio vaikinio komponento).
 
-// Atvaizduoti masyvą dogs. Šunis, kurie prasideda didžiąja raide 
-// praleisti (neatvaizduoti).
+// Sukurti keturis komponentus Vandenynas, Tipas, Vardas, Spalva. Vandenynas tėvinis
+//  komponentas kiti trys vaikiniai. Vaikiniuose komponentuose atvaizduoti tą patį masyvą,
+//   tik išrūšiuotą pagal komponento vardą (pvz Tipas išrūšiuota pagal tipą ir t.t.).
 
-// Naudojant masyvą dogs atvaizduoti skaičius, kurie yra lygūs žodžių
-//  masyve ilgiui. Skaičius, didesnius nei 6 atvaizduoti žaliai, kitus
-//   raudonai.
+// Sukurti penkis komponentus. Pasaulis, Namas, Narvas, Garazas ir Akvariumas.
+// Pasaulis tėvinis komponentas, kiti keturi vaikiniai. Atvaizduoti masyvą seaPlaners 
+// pagal taisyklę: “man” - Namas, “car” - Garazas, “animal” - Narvas, “fish” - Akvariumas. 
+// Komponentas Pasaulis turi būti padalintas į dvi dalis- porinę ir neporinę (pagal id, ne masyvo indeksą).
+//  Visus keturis vaikinius komponentus panaudoti po du kartus - porinėje ir neporinėje
+//   dalyje, atvaizduojant porinius ir neporinius masyvo įrašus.
+
+// Kiekviename uždavinyje galima susikurti kiek reikia papildomų komponentų.
+// Visuose uždaviniuose name savybę reikia nudažyti spalva, kuri yra color savybėje.
 
 
-import Vienas from "./010/components/Repeat/vienas";
+// Sukurti komponentą su mygtuku ir įvedimo laukeliu. Įvedus į laukelį skaičių ir paspaudus mygtuką, 
+// atsiranda laukelyje nurodytas raudonų kvadratėlių skaičius. Įvedus kitą skaičių ir paspaudus mygtuką,
+//  prie jau egzistuojančių kvadratėlių papildomai prisideda naujas laukelyje nurodytas kvadratėlių kiekis.
+//   Kiekvieno kvadratėlio viduryje turi būti pavaizduotas rand skaičius 100 - 200.
+
+// Sukurti komponentą su dviem įvedimo laukeliais, katinuko vardui ir svoriui įvesti. Rodyti visų įvestų 
+// katinukų sąrašą. Puslapiui persikrovus, katinukų sąrašas turi išlikti nepakitęs. Katinukus sąraše rūšiuoti
+//  nuo storiausio iki ploniausio. Skaičiuoti ir atvaizduoti bendrą katinukų svorį.
+
+// Sukurti komponentą su dviem įvedimo laukeliais. Pradžioje viename laukelyje rodyti skaičių 100 kitame 50.
+//  Santykis tarp pirmo ir antro laukelio yra 2. Pakeitus skaičius viename kažkuriame laukelyje turi pasikeisti
+//   ir skaičius kitame laukelyje taip, kad santykis išliktų nepakitęs.
+
+// Sukurti komponentą su trim select pasirinkimais ir teksto įvedimo laukeliu. Įvedamas tekstas turi būti
+//  atvaizduojamas atskirai komponento apačioje. Select pasirinkimai sudaryti iš 5 skirtingų spalvų,
+//   5 skirtingų fontų dydžių ir 5 skirtingų fontų (Arial, Times new Roman ar panašiai) Select pasirinkimų 
+//   nustatymai turi keisti atvaizduojamo teksto išvaizdą.
+
+// Sukurti komponentą su dviem range tipo įvedimais 
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range vienu color 
+// įvedimu https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color ir 
+// mygtukais sukurti ir išsaugoti. Paspaudus mygtuką sukurti, atsiranda naujas kvadratas
+//  100px aukščio ir pločio bei juodu fonu. Keičiant range ir color įvedimus keičiasi ir 
+//  kvadrato išvaizda. Kvadrato išvaizdą nustato įvedimai: range tipo įvedimai nuo 10 iki 200
+//   ir nustato plotą ir aukštį pikseliais, color- fono spalvą. Paspaudus mygtuką išsaugoti,
+//    kvadrato išvaizda išsaugoma ir į nustatymus nebereguoja. Vėl paspaudus mygtuką sukurti-
+//     atsiranda naujas reguliuojamas kvadratas.
+
+
+import Bal from "./010/components/Repeat/Bal";
+import Tven from "./010/components/Repeat/Tven";
 import "./App.scss";
+import Vandenyn from "./010/components/Repeat/Vandenyn";
+import Lauk from "./010/components/Repeat/Lauk";
+import Antfrom from './010/components/Repeat/Antfrom'
 
-
-// <div className="dogs-container">
-//         {dogs.map((dog, i) =>
-//           i % 2 === 0 ? (
-//             <Kvadratas key={uuidv4()} dog={dog} />
-//           ) : (
-//             <Apskritimas key={uuidv4()} dog={dog} />
-//           )
-//         )}
-//       </div>
 
 
 function App() {
 
-
-
-const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
-console.log(dogs)
-
-
+  const seaPlaners = [
+    {id: 1, type: 'man', name: 'Lina', color: 'blue'},
+    {id: 2, type: 'car', name: 'Opel', color: 'red'},
+    {id: 3, type: 'animal', name: 'Vilkas', color: 'green'},
+    {id: 4, type: 'fish', name: 'Ungurys', color: 'yellow'},
+    {id: 5, type: 'man', name: 'Tomas', color: 'green'},
+    {id: 6, type: 'animal', name: 'Bebras', color: 'red'},
+    {id: 7, type: 'animal', name: 'Barsukas', color: 'green'},
+    {id: 8, type: 'car', name: 'MB', color: 'blue'},
+    {id: 9, type: 'car', name: 'ZIL', color: 'red'},
+    {id: 10, type: 'man', name: 'Teta Toma', color: 'yellow'},
+  ];
+  
 
 
 
   return (
     <div className="App">
       <header className="App-header">
-        {
-          dogs.map((dog, i) =>  
-          ++i % 2 === 0 ?
-         ( <div  className="dog">{+i}.{dog}</div> ) : 
-          (<div className="camel">{+i}.{dog}</div>)
-        )}
-  
+      {/* <Bal seaPlaners={seaPlaners}></Bal>  */}
+       {/* <Tven seaPlaners={seaPlaners} /> 
+      <Vandenyn seaPlaners={seaPlaners} /> */}
+      {/* <Lauk /> */}
+      <Antfrom />
       </header>
     </div>
   );
