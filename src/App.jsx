@@ -59,6 +59,7 @@ import "./App.scss";
 import Vandenyn from "./010/components/Repeat/Vandenyn";
 import Lauk from "./010/components/Repeat/Lauk";
 import Antfrom from './010/components/Repeat/Antfrom'
+import Select from "./010/components/Repeat/Select";
 
 
 
@@ -87,7 +88,8 @@ function App() {
        {/* <Tven seaPlaners={seaPlaners} /> 
       <Vandenyn seaPlaners={seaPlaners} /> */}
       {/* <Lauk /> */}
-      <Antfrom />
+      {/* <Antfrom /> */}
+      <Select />
       </header>
     </div>
   );
