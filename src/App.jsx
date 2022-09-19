@@ -46,11 +46,11 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range vienu color 
 // įvedimu https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color ir 
 // mygtukais sukurti ir išsaugoti. Paspaudus mygtuką sukurti, atsiranda naujas kvadratas
-//  100px aukščio ir pločio bei juodu fonu. Keičiant range ir color įvedimus keičiasi ir 
-//  kvadrato išvaizda. Kvadrato išvaizdą nustato įvedimai: range tipo įvedimai nuo 10 iki 200
-//   ir nustato plotą ir aukštį pikseliais, color- fono spalvą. Paspaudus mygtuką išsaugoti,
-//    kvadrato išvaizda išsaugoma ir į nustatymus nebereguoja. Vėl paspaudus mygtuką sukurti-
-//     atsiranda naujas reguliuojamas kvadratas.
+// 100px aukščio ir pločio bei juodu fonu. Keičiant range ir color įvedimus keičiasi ir 
+// kvadrato išvaizda. Kvadrato išvaizdą nustato įvedimai: range tipo įvedimai nuo 10 iki 200
+//  ir nustato plotą ir aukštį pikseliais, color- fono spalvą. Paspaudus mygtuką išsaugoti,
+// kvadrato išvaizda išsaugoma ir į nustatymus nebereguoja. Vėl paspaudus mygtuką sukurti-
+// atsiranda naujas reguliuojamas kvadratas.
 
 
 import Bal from "./010/components/Repeat/Bal";
@@ -60,6 +60,7 @@ import Vandenyn from "./010/components/Repeat/Vandenyn";
 import Lauk from "./010/components/Repeat/Lauk";
 import Antfrom from './010/components/Repeat/Antfrom'
 import Select from "./010/components/Repeat/Select";
+import Range from "./010/components/Repeat/Range";
 
 
 
@@ -89,7 +90,8 @@ function App() {
       <Vandenyn seaPlaners={seaPlaners} /> */}
       {/* <Lauk /> */}
       {/* <Antfrom /> */}
-      <Select />
+      {/* <Select /> */}
+      <Range />
       </header>
     </div>
   );

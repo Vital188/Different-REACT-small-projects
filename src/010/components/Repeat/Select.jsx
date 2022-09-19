@@ -39,7 +39,7 @@ const change = e => {
 
   return (
     <div className="miskas">
-      <select class="form-select" value={select} onChange={change}>
+      <select className="form-select" value={select} onChange={change}>
         <option selected>Open this select menu</option>
         <option value="1">One</option>
         <option value="2">Two</option>
