@@ -60,7 +60,7 @@ function App() {
   }, [])
 
   const change = (kv, index) => {
-    const copyRut = [...kvad]
+    const copyRut = [...rutul]
     const copyKvad = [...kvad].filter((el, i) => index !== i)
     copyRut.push(kv)
    setKvad(copyKvad)
@@ -68,7 +68,7 @@ function App() {
   }
 
   const change2 = (rut, index) => {
-    const copyKvad = [...rutul]
+    const copyKvad = [...kvad]
     const copyRut = [...rutul].filter((el, i) => index !== i)
     copyKvad.push(rut)
    setKvad(copyKvad)
