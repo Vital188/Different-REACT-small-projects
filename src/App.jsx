@@ -1,97 +1,97 @@
-// Sukurti Komponentą Bala ir jame atvaizduoti masyvą seaPlaners.
-
-// Sukurti du komponentus Tvenkinys, Daiktas -  tėvinį ir vaikinį atitinkamai.
-//  Tvenkinys komponente du kartus panaudokite komponentą Daiktas atvaizduoti 
-//  masyvą seaPlaners - vieną kartą poriniams kitą kartą neporiniams įrašams 
-//  (pagal id, ne masyvo indeksą).
-
-// Sukurti keturis komponentus. Jura, Valtis, Laivas, Sala. Jura tėvinis komponentas,
-//  kiti trys vaikiniai. Atvaizduoti masyvą seaPlaners pagal taisyklę: “man” - Valtis,
-//   “car” - Laivas, “animal” - Sala, “fish” - tiesiai Jura komponente (be jokio vaikinio komponento).
-
-// Sukurti keturis komponentus Vandenynas, Tipas, Vardas, Spalva. Vandenynas tėvinis
-//  komponentas kiti trys vaikiniai. Vaikiniuose komponentuose atvaizduoti tą patį masyvą,
-//   tik išrūšiuotą pagal komponento vardą (pvz Tipas išrūšiuota pagal tipą ir t.t.).
-
-// Sukurti penkis komponentus. Pasaulis, Namas, Narvas, Garazas ir Akvariumas.
-// Pasaulis tėvinis komponentas, kiti keturi vaikiniai. Atvaizduoti masyvą seaPlaners 
-// pagal taisyklę: “man” - Namas, “car” - Garazas, “animal” - Narvas, “fish” - Akvariumas. 
-// Komponentas Pasaulis turi būti padalintas į dvi dalis- porinę ir neporinę (pagal id, ne masyvo indeksą).
-//  Visus keturis vaikinius komponentus panaudoti po du kartus - porinėje ir neporinėje
-//   dalyje, atvaizduojant porinius ir neporinius masyvo įrašus.
-
-// Kiekviename uždavinyje galima susikurti kiek reikia papildomų komponentų.
-// Visuose uždaviniuose name savybę reikia nudažyti spalva, kuri yra color savybėje.
-
-
-// Sukurti komponentą su mygtuku ir įvedimo laukeliu. Įvedus į laukelį skaičių ir paspaudus mygtuką, 
-// atsiranda laukelyje nurodytas raudonų kvadratėlių skaičius. Įvedus kitą skaičių ir paspaudus mygtuką,
-//  prie jau egzistuojančių kvadratėlių papildomai prisideda naujas laukelyje nurodytas kvadratėlių kiekis.
-//   Kiekvieno kvadratėlio viduryje turi būti pavaizduotas rand skaičius 100 - 200.
-
-// Sukurti komponentą su dviem įvedimo laukeliais, katinuko vardui ir svoriui įvesti. Rodyti visų įvestų 
-// katinukų sąrašą. Puslapiui persikrovus, katinukų sąrašas turi išlikti nepakitęs. Katinukus sąraše rūšiuoti
-//  nuo storiausio iki ploniausio. Skaičiuoti ir atvaizduoti bendrą katinukų svorį.
-
-// Sukurti komponentą su dviem įvedimo laukeliais. Pradžioje viename laukelyje rodyti skaičių 100 kitame 50.
-//  Santykis tarp pirmo ir antro laukelio yra 2. Pakeitus skaičius viename kažkuriame laukelyje turi pasikeisti
-//   ir skaičius kitame laukelyje taip, kad santykis išliktų nepakitęs.
-
-// Sukurti komponentą su trim select pasirinkimais ir teksto įvedimo laukeliu. Įvedamas tekstas turi būti
-//  atvaizduojamas atskirai komponento apačioje. Select pasirinkimai sudaryti iš 5 skirtingų spalvų,
-//   5 skirtingų fontų dydžių ir 5 skirtingų fontų (Arial, Times new Roman ar panašiai) Select pasirinkimų 
-//   nustatymai turi keisti atvaizduojamo teksto išvaizdą.
-
-// Sukurti komponentą su dviem range tipo įvedimais 
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range vienu color 
-// įvedimu https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color ir 
-// mygtukais sukurti ir išsaugoti. Paspaudus mygtuką sukurti, atsiranda naujas kvadratas
-// 100px aukščio ir pločio bei juodu fonu. Keičiant range ir color įvedimus keičiasi ir 
-// kvadrato išvaizda. Kvadrato išvaizdą nustato įvedimai: range tipo įvedimai nuo 10 iki 200
-//  ir nustato plotą ir aukštį pikseliais, color- fono spalvą. Paspaudus mygtuką išsaugoti,
-// kvadrato išvaizda išsaugoma ir į nustatymus nebereguoja. Vėl paspaudus mygtuką sukurti-
-// atsiranda naujas reguliuojamas kvadratas.
-
-
-import Bal from "./010/components/Repeat/Bal";
-import Tven from "./010/components/Repeat/Tven";
+// Sukurti tuščią “Ganyklą”. Ją padalinti į dvi dalis su užrašais- Avys ir Karvės. Sukurti mygtuką “į ganyklą”, 
+// kurį paspaudus dešinė pusė būtų apgyvendinta avimis, kurias vaizduoja apskritimai, o kairė pusė karvėmis, 
+// kurias vaizduoja keturkampiai. Avių ir karvių skaičius rand 5 - 20. Kiekvieno gyvulio viduje yra random 
+// identifikacinis numeris: pvz avim A0254787, karvėm K0007898, kur skaičius yra septynženklis rand skaičius. 
+// Perkrovus puslapį avių ir karvių skaičius ir jų identifikaciniai numeriai turi nekisti (tik patį pirmą kartą “Ganykla” turi būti tuščia).
+//  Paspaudus ant avies arba karvės ji turi perbėgti į priešingą ganyklos pusę (antrą kartą paspaudus grįžti atgal). 
+//  Perkrovus puslapį perbėgimai turi išlikti nepakitę. Pakartotinai paspaudus “į ganyklą”, turi atsirasti nauji gyvuliai, kaip ir pirmą kartą.
+// Pastaba: karvė avių ganyklos pusėje lieka karve, o avis- avimi. Nemutuojam! Perbėgusios avys ir karvės yra dedamos į bandos galą.
+import { useState } from "react";
 import "./App.scss";
-import Vandenyn from "./010/components/Repeat/Vandenyn";
-import Lauk from "./010/components/Repeat/Lauk";
-import Antfrom from './010/components/Repeat/Antfrom'
-import Select from "./010/components/Repeat/Select";
-import Range from "./010/components/Repeat/Range";
-
-
+import rand from './010/function/rand'
+import { useEffect } from "react";
+import { useRef } from "react";
 
 function App() {
 
-  const seaPlaners = [
-    {id: 1, type: 'man', name: 'Lina', color: 'blue'},
-    {id: 2, type: 'car', name: 'Opel', color: 'red'},
-    {id: 3, type: 'animal', name: 'Vilkas', color: 'green'},
-    {id: 4, type: 'fish', name: 'Ungurys', color: 'yellow'},
-    {id: 5, type: 'man', name: 'Tomas', color: 'green'},
-    {id: 6, type: 'animal', name: 'Bebras', color: 'red'},
-    {id: 7, type: 'animal', name: 'Barsukas', color: 'green'},
-    {id: 8, type: 'car', name: 'MB', color: 'blue'},
-    {id: 9, type: 'car', name: 'ZIL', color: 'red'},
-    {id: 10, type: 'man', name: 'Teta Toma', color: 'yellow'},
-  ];
+  const [kvad, setKvad] = useState(null);
+  const [rutul, setRutul] = useState(null);
   
 
+  const add = () => {
+    for (let i=0; i < rand(2,5); i++) {
+    setKvad(s => [...s, {
+      number: 'K' + (rand(0, 999999)) 
+    }])}
+    for (let i=0; i < rand(2,5); i++) {
+    setRutul(s =>[...s, {
+      number: 'A' + (rand(0, 999999)) 
+    }])}
+  }
 
+  useEffect (() => {
+    if (kvad === null) {
+      setKvad([])
+    }
+    else {localStorage.setItem('KVAD', JSON.stringify(kvad))}
+  }, [kvad])
 
+  useEffect (() => {
+    const l = localStorage.getItem('KVAD')
+    if ( l === null ) {
+      setKvad ([])
+    }
+    else {setKvad(JSON.parse(l))}
+  }, [])
+
+  useEffect (() => {
+    if (rutul === null) {
+      setRutul([])
+    }
+    else {localStorage.setItem('rutul', JSON.stringify(rutul))}
+  }, [rutul])
+
+  useEffect (() => {
+    const k = localStorage.getItem('rutul')
+    if ( k === null ) {
+      setRutul ([])
+    }
+    else {setRutul(JSON.parse(k))}
+  }, [])
+
+  const change = (kv, index) => {
+    const copyRut = [...kvad]
+    const copyKvad = [...kvad].filter((el, i) => index !== i)
+    copyRut.push(kv)
+   setKvad(copyKvad)
+   setRutul(copyRut)
+  }
+
+  const change2 = (rut, index) => {
+    const copyKvad = [...rutul]
+    const copyRut = [...rutul].filter((el, i) => index !== i)
+    copyKvad.push(rut)
+   setKvad(copyKvad)
+   setRutul(copyRut)
+  }
+ 
   return (
     <div className="App">
       <header className="App-header">
-      {/* <Bal seaPlaners={seaPlaners}></Bal>  */}
-       {/* <Tven seaPlaners={seaPlaners} /> 
-      <Vandenyn seaPlaners={seaPlaners} /> */}
-      {/* <Lauk /> */}
-      {/* <Antfrom /> */}
-      {/* <Select /> */}
-      <Range />
+      <div className="miskas">
+        <div className="azuolas">
+          {
+          kvad?.map((kv, i) =>  <div onClick={() => change(kv, i)}  className="kvad" key={i}>{kv.number}</div>)
+          }
+        </div>
+        <div className="berzas">
+        {
+          rutul?.map((rut, i) => <div onClick={()=>change2(rut, i)} className="rutul" key={i}>{rut.number}</div>)
+          }
+        </div>
+      </div>
+      <button onClick={add}>I ganykla</button>
+
       </header>
     </div>
   );

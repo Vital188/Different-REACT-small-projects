@@ -341,13 +341,15 @@ input {
 }
 
 .azuolas, .berzas, .uosis {
-  width: 180px;
+  width: 296px;
+  height: 598px;
   border: 2px black solid;
-  align-items: flex-end;
-  margin: 10px;
-  display: grid;
-  justify-content: space-around;
-
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid orange;
+  flex-wrap: wrap;
 }
 
 .kvadratas {
@@ -377,4 +379,28 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.kvad {
+width: 40px;
+height: 40px;
+background-color: aqua;
+border-radius: 5%;
+font-size: 10px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+color: black;
+}
+
+.rutul {
+width: 40px;
+height: 40px;
+background-color: aqua;
+border-radius: 50%;
+font-size: 10px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+color: black;
 }
