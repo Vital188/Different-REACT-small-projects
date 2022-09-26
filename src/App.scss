@@ -326,18 +326,60 @@ input {
 }
 
 .miskas {
-  width: 600px;
+  width: 1000px;
   display: flex;
-  height: 600px;
-  background-color: green;
-  columns: 3;
-  border: 2px black solid;
-  /* margin: 100px; */
-  /* justify-content: center; */
+  height: auto;
+  background-color: #E8FEE5;
+  flex-direction: column;
+  justify-content: first baseline;
+  position: relative;
+  margin: 15px 200px 10px 250px;
+  flex-wrap: wrap;
+  align-content: baseline;}
+.title {
+    padding: 20px 0 0 30px;
+    display: flex;
+    justify-content: first baseline;
+    font-size: 30px;}
+.button-box {
+  margin-top: 20px;
+  display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position:relative;
+  margin-bottom: 20px;
+  }
+  
+
+
+.buttonA {
+  width: 100px;
+  background-color: #ABFC9C;
+  margin-left: 15px;
+  border-radius: 15px;
+  color: #282c34;
+}
+
+.buttonB {
+  width: 100px;
+  background-color: #ABFC9C;
+  margin-left: 100px;
+  border-radius: 15px;
+  color: #282c34;
+}
+.buttonC {
+  width: 100px;
+  background-color: #ABFC9C;
+  margin-left: 567px;
+  border-radius: 15px;
+  color: #282c34;
+}
+
+.list {
+  background-color: #D6FED0;
+  width: 915px;
+  margin: 20px 10px 20px 43px;
+  height:aut o;
+  text-align: left;
+  list-style: none;
 }
 
 .azuolas, .berzas, .uosis {
