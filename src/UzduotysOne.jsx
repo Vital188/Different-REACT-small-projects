@@ -1,4 +1,4 @@
-import All from "./010/components/UzduotysTwo/All";
+import All from "./010/components/UzduotysOne/All";
 import "./App.scss";
 
 
